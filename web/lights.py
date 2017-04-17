@@ -8,11 +8,6 @@ PORT = 8080
 
 MQTT_BROKER = '127.0.0.1'
 
-OFF_PIN = 14
-ON_PIN = 15
-
-PULSE_WIDTH = 0.25
-
 app = Flask(__name__, static_url_path='')
 
 mqtt_client = mqtt.Client()
