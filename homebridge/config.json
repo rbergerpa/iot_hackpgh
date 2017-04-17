@@ -1,0 +1,55 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "614-13-457"
+    },
+    
+    "description": "This is an example configuration file. You can use this as a template for creating your own configuration file.",
+
+    "platforms": [
+    ],
+    "accessories": [
+    	{
+            "accessory": "mqttswitch",
+            "name": "Main Lights",
+            "url": "tcp://localhost",
+	     "topics": {
+		"statusGet": "get_status",
+ 		"statusSet": "/lights/main/set"
+ 	     },
+	    "integerValue": true
+    	},
+    	{
+            "accessory": "mqttswitch",
+            "name": "Shop Area Lights",
+            "url": "tcp://localhost",
+	     "topics": {
+		"statusGet": "get_status",
+ 		"statusSet": "/lights/shop/set"
+ 	     },
+	    "integerValue": true
+    	},
+    	{
+            "accessory": "mqttswitch",
+            "name": "All Lights",
+            "url": "tcp://localhost",
+	     "topics": {
+		"statusGet": "get_status",
+ 		"statusSet": "/lights/all/set"
+ 	     },
+	    "integerValue": true
+    	},
+      	{
+            "accessory": "mqttswitch",
+            "name": "Shop Tardis",
+            "url": "tcp://localhost",
+	     "topics": {
+		"statusGet": "get_status",
+ 		"statusSet": "Tardis"
+ 	     },
+	    "integerValue": true
+    	}
+]
+}
