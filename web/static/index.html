@@ -9,7 +9,20 @@
   </head>
 
   <body>
+    <div>
+      <H2>Main Lights</H2>
       <button class='btn-mqtt' data-topic='/lights/main/set' data-message = '0'>Off</button>
       <button class='btn-mqtt' data-topic='/lights/main/set' data-message = '1'>On</button>
+    </div>
+    <div>
+      <H2>Shop Area Lights</H2>
+      <button class='btn-mqtt' data-topic='/lights/shop/set' data-message = '0'>Off</button>
+      <button class='btn-mqtt' data-topic='/lights/shop/set' data-message = '1'>On</button>
+    </div>
+    <div>
+      <H2>All Lights</H2>
+      <button class='btn-mqtt' data-topic='/lights/all/set' data-message = '0'>Off</button>
+      <button class='btn-mqtt' data-topic='/lights/all/set' data-message = '1'>On</button>
+    </div>
   </body>
 </html>
