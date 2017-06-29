@@ -3,6 +3,12 @@ function initMQTT() {
       var btn = $(this);
       publishMessage(btn.data('topic'), btn.data('message'));
   });
+
+  $('.btn-donate').on('mousedown', function() {
+      publishMessage('Tardis', '1');
+
+      setTimeout(function() { publishMessage('Tardis', '0'); }, 10000);
+  });
 }
 
 function publishMessage(topic, message) {

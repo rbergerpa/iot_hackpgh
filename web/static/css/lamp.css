@@ -4,3 +4,11 @@ button {
     height: 60px;
     font-size: 20px;
 }
+
+
+.btn-large {
+    margin: 30px;
+    width: 800px;
+    height: 450px;
+    font-size: 100px;
+}
